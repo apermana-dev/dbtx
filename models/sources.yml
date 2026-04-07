@@ -2,8 +2,7 @@
 version: 2
 
 sources:
-    -   name: dbtx
-        database: dbtx2
+    -   name: dbt
         schema: public
        
         tables: 
