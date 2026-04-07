@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: customer_total_spent
+  - name: product_best_seller
