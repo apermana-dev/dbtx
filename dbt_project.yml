@@ -2,7 +2,6 @@ name: "join_order_transform"
 version: "1.0"
 config-version: 2
 
-profile: "normalize"
 model-paths: ["models"]
 
 
