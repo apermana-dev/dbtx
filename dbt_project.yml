@@ -2,26 +2,7 @@ name: "join_order_transform"
 version: "1.0"
 config-version: 2
 
-#check this profile also in airbyte-integrations\bases\base-normalization\normalization\transform_config\profile_base.yml
-#di profile_base.yml airbyte, bisa ditambahkan informasi koneksi, bisa juga tidak
-#kalau dikosongkan, dia akan membaca koneksi yang dipasang dari UI Airbyte (destination connection)
-#profile: "tdi_project" #"normalize" #dua2nya bisa. ditambahkan koneksi informasi nya di profile_base.yml nya
-profile: "normalize" #ini coba tanpa informasi koneksi di profile_base.yml, jadi koneksi nya langsung ngambil dari UI airbyte
-                     #informasi koneksi di profile_base.yml kita kosongkan dulu/kembali ke default
-
+profile: "normalize"
 model-paths: ["models"]
-
-#target-path: "../build" # directory which will store compiled SQL files
-#log-path: "../logs" # directory which will store DBT logs
-#packages-install-path: "/dbt" # directory which will store external DBT dependencies
-
-clean-targets: # directories to be removed by `dbt clean`
-  - "build"
-  - "dbt_modules"
-
-#quoting:
-#  database: true
-#  schema: true
-#  identifier: true
 
 

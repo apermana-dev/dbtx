@@ -1,10 +1,13 @@
+
 version: 2
 
 sources:
-  - name: dbt
-    schema: public
-
-    tables:
-      - name: customers
-      - name: products
-      - name: orders
+    -   name: dbtx
+        database: dbtx2
+        schema: public
+       
+        tables: 
+            -   name: customers
+            -   name: products
+            -   name: orders
+            
